@@ -1,0 +1,193 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
+/* layout */
+:root {
+  --primary: #7829d8;
+  --error: #e7195a;
+}
+body {
+  background: #f1f1f1;
+  margin: 0;
+  font-family: "Poppins";
+}
+header {
+  background: var(--primary);
+  color: #fff;
+  
+}
+header .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header h1{
+  display: inline-block;
+  font-size: 70px;
+  padding: 0;
+  margin: 0;
+  font-style: italic;
+}
+header h2{
+  font-style: italic;
+  text-transform: uppercase;
+  display:inline-block;
+  margin:0;
+  padding:0;
+  color:#f9f46b;
+}
+header a {
+  color: #333;
+  color:#fff;
+  text-decoration: none;
+}
+.pages{
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* homepage */
+.home {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 100px;
+}
+.todo-details {
+  background: #fff;
+  border-radius: 4px;
+  margin: 20px auto;
+  padding: 20px;
+  position: relative;
+  /* min-width: 400px; */
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+.todo-details h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  color: var(--primary);
+}
+.todo-details p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #555;
+}
+.todo-details span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: #f1f1f1;
+  padding: 6px;
+  border-radius: 50%;
+  color: #333;
+}
+
+/* new workout form */
+label, input {
+  display: block;
+}
+input {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  font-family: "Poppins";
+  font-weight: 500;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+form button {
+  background: var(--primary);
+  border: 1px solid transparent;
+  /* border: 0; */
+  color: #fff;
+  padding: 10px;
+  min-width: 100px;
+  font-family: "Poppins";
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+form button:hover{
+  /* opacity: 0.9; */
+  opacity: 0.8;
+  background-color: greenyellow;
+  border: 1px solid black;
+  color: black;
+}
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+input.error{
+  border: 1px solid var(--error);
+}
+nav{
+  display: flex;
+  align-items: center;
+}
+nav a {
+  font-size: 18px;
+  margin: 30px;
+  transition: color 0.25s;
+}
+nav a:hover{
+  color: #abff03;
+  border-bottom:2px solid #abff03;
+}
+
+nav button{
+  background: #fff;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-family: "Poppins";
+  cursor: pointer;
+  font-size: 1em;
+  margin-left: 10px;
+  border: 1px solid transparent;
+  transition: background-color 0.25s ease-in;
+}
+nav button:hover{
+  background-color: yellowgreen;
+  color: white;
+  border: 1px solid white;
+  
+}
+form{
+  padding: 20px;
+  border-radius: 30px;
+  background-color: white;
+  /* min-width: 300px; */
+}
+ /* auth forms */
+
+ form.signup, form.login{
+  max-width: 400px;
+  margin: 40px auto ;
+  padding: 20px;
+  background: #fff;
+  border-radius: 30px;
+ }
+
+.todo-details span{
+  transition: all 0.2s ease;
+}
+.todo-details span:hover{
+  /* transform:scale(1.1, 1.1); */
+  background: gray;
+  color: white;
+  /* size: 110%; */
+}
+
+
